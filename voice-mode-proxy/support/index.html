@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Voice Mode Proxy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 42em; margin: 2em auto; padding: 0 1em; line-height: 1.5; color: #222; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.2em; margin-top: 1.6em; }
+  a { color: #0b5fff; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #ddd; } a { color: #7ab0ff; } }
+</style>
+</head>
+<body>
+<h1>Support — Voice Mode Proxy</h1>
+
+<p>Voice Mode Proxy is an open-source app and server. There is no company behind it; it is
+maintained by George Mazzeo.</p>
+
+<h2>Getting help</h2>
+<ul>
+  <li><strong>Setup and usage:</strong> the project README covers installing the server on a
+  Mac, putting Tailscale on your phone, pairing the phone, and entering the server address in
+  the app.</li>
+  <li><strong>Bugs and questions:</strong> open an issue on the project repository. Include
+  what you did, what you expected, and what happened. For app problems, the iOS version and
+  the TestFlight build number help; for server problems, the last lines of the server log.</li>
+  <li><strong>Email:</strong> <a href="mailto:mazzeogeorge@gmail.com">mazzeogeorge@gmail.com</a>
+  for anything that should not be public.</li>
+</ul>
+
+<h2>Common problems</h2>
+<ul>
+  <li><strong>"Cannot reach" your server.</strong> Check that the server is running on the
+  Mac, the Mac is awake (it must not be asleep; see the README on energy settings), and the
+  phone is on the same Tailscale network. Use Test connection on the Settings screen.</li>
+  <li><strong>"This phone is not paired."</strong> The server issues a pairing code when it
+  starts (run <code>vmp pair</code> on the Mac to get a new one) and the app asks for it on
+  first connection. Enter it within a few minutes; a fresh server install forgets old
+  phones.</li>
+  <li><strong>The mic button is greyed out.</strong> Speech recognition is done by the
+  server. It is off in demo mode, and off if the server was started without speech
+  recognition.</li>
+  <li><strong>Replies are cut off when you talk.</strong> Barge-in is off by default; if you
+  turned it on, the speaker can be heard by the mic and read as an interruption. Turn it off
+  in Settings.</li>
+  <li><strong>No sound with the screen locked.</strong> Make sure the mic was on before
+  locking; the active audio session is what keeps the app alive in the background.</li>
+</ul>
+
+<h2>What the app does not do</h2>
+<p>It does not collect data, has no accounts, and talks only to the server you point it at.
+See the <a href="/voice-mode-proxy/privacy/">privacy policy</a> for details.</p>
+</body>
+</html>

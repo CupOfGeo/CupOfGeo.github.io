@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Voice Mode Proxy</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 42em; margin: 2em auto; padding: 0 1em; line-height: 1.5; color: #222; }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.2em; margin-top: 1.6em; }
+  a { color: #0b5fff; }
+  @media (prefers-color-scheme: dark) { body { background: #111; color: #ddd; } a { color: #7ab0ff; } }
+</style>
+</head>
+<body>
+<h1>Privacy Policy — Voice Mode Proxy</h1>
+<p><em>Last updated 2026-09-23</em></p>
+
+<p>Voice Mode Proxy is an iOS app that lets you talk to a server you run yourself. This
+policy describes what the app does with your data. The short version: your data goes to
+your own server and nowhere else.</p>
+
+<h2>What the app collects</h2>
+<p><strong>Nothing is sent to us.</strong> The app has no accounts, no analytics, no advertising,
+no crash reporting and no third-party services. We do not receive, store or see any data
+from the app.</p>
+<p><strong>Microphone.</strong> When you turn the mic on, the app streams audio to the server
+address you entered in the app, and to nothing else. Audio is not stored on the phone. The
+mic is off until you tap it and stays off in demo mode.</p>
+<p><strong>Text you type and replies you receive</strong> travel between the phone and your
+server only.</p>
+<p><strong>Stored on the phone.</strong> The app keeps two things: the address of your server,
+and the pairing token your server issues when you pair the phone, kept in the iOS keychain.
+It keeps no history; the conversation shown on screen is fetched from your server each time.</p>
+
+<h2>Your server</h2>
+<p>The server component runs on a computer you control. What it does with audio and text,
+including the transcripts it writes to disk and the requests it makes to Anthropic's Claude
+on your behalf, happens under your own account and your own settings. See the project
+README for how the server stores session logs and how to delete them.</p>
+
+<h2>Network</h2>
+<p>The app connects only to the server address you enter. The project recommends reaching it
+over your own private network (Tailscale), so no traffic crosses the public internet. The
+app makes no other network connections.</p>
+
+<h2>Demo mode</h2>
+<p>Demo mode runs entirely on the phone with a built-in fake server. Nothing leaves the
+device. Replies are read aloud by the phone's own speech voice.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes and the new text is published at the
+same address.</p>
+
+<h2>Contact</h2>
+<p>Questions: email George Mazzeo at
+<a href="mailto:mazzeogeorge@gmail.com">mazzeogeorge@gmail.com</a>, or open an issue on the
+project repository if you have access to it.</p>
+</body>
+</html>
